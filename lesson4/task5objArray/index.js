@@ -300,6 +300,7 @@
 // compareObjects(obj4, obj5); // ==> true
 
 // NUMBERS NUMBERS NUMBERS
+// isFinite, isNaN, Number.isFinite, Number,isNaN
 
 // function getFiniteNumbers(arr) {
 //   const newArr = arr.filter(number => Number.isFinite(number));
@@ -322,6 +323,8 @@
 //   const newArr = arr.filter(number => Number.isInteger(number));
 //   return newArr;
 // }
+
+// c помощью стрелочных функций isFinite, isNaN, Number.isFinite, Number, isNaN;
 const getFiniteNumbers = arr => arr.filter(number => Number.isFinite(number));
 const getFiniteNumbersV2 = arr => arr.filter(number => isFinite(number));
 const getNaN = arr => arr.filter(number => Number.isNaN(number));

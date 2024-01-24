@@ -1,7 +1,7 @@
 function splitText(str, num = 10) {
   const array = [];
   let position = 0;
-  if (!str) return null;
+  if (typeof str !== 'string') return null;
   while (true) {
     const chank = str.substr(position, num);
     if (chank.length === 0) {
